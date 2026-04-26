@@ -1,76 +1,35 @@
 # Taxi Data Analysis – Power BI Report
+**Overview**
+This project analyzes New York City Yellow Taxi trip data using Power BI to uncover patterns in trip demand, fare amounts, and temporal trends. The dashboard helps identify peak hours, high-revenue time slots, and weekly demand patterns.
 
-## Overview
+**Key Findings**
+InsightFindingPeak trip hours13:00 and 14:00 — highest demand at 61K trips eachLowest demand05:00 — only 16K trips (off-peak hours highlighted in red)Highest average fare05:00 — $17.0 average (likely longer airport/night rides)Lowest average fare10:00–11:00 — $11.7 average (short city rides during morning)Busiest dayFriday — 356K tripsQuietest dayMonday — 98K trips
 
-This repository contains a **Power BI (.pbix) report** that analyzes taxi trip data to uncover trends in demand, revenue, trip characteristics, and temporal patterns. The report is designed for quick exploration by analysts, stakeholders, and anyone interested in urban mobility insights.
+**Insights & Business Recommendations**
+1. Peak demand is midday (1–2 PM)
+Taxi operators should ensure maximum driver availability between 12:00 and 15:00 to capture peak demand.
+2. Early morning rides (5 AM) generate the highest fares
+Despite low trip volume, 5 AM has the highest average fare ($17.0) — likely due to airport runs and longer distances. Targeting early morning availability could increase driver revenue.
+3. Friday is the busiest day — nearly 4x Monday
+Friday demand (356K) is significantly higher than Monday (98K). Weekend preparation and staffing should be prioritized from Friday onwards.
+4. Fare drop at 10–11 AM suggests short commuter trips
+The lowest fares occur during late morning — these are likely short office commutes. Drivers may benefit from repositioning to high-demand pickup zones during this window.
 
----
+**Tools Used**
 
-## What’s Inside the Report
-
-The Power BI report includes interactive dashboards and visuals such as:
-
-* 📊 **Trip Volume Analysis** – total trips by day, month, and year
-* 💰 **Revenue Metrics** – fares, tips, and total earnings
-* ⏱️ **Trip Characteristics** – trip duration, distance, and averages
-* 🗺️ **Location Insights** – pickups and drop-offs by zone/area (where available)
-* 🕒 **Time-Based Patterns** – peak hours, weekdays vs weekends
-
-All visuals are interactive: use filters, slicers, and cross-highlighting to explore the data.
-
----
-
-## Data Source
-
-The report is built on taxi trip data (e.g., city taxi or ride-hailing records). Typical fields include:
-
-* Pickup and drop-off timestamps
-* Trip distance and duration
-* Fare amount, tips, and total cost
-* Pickup and drop-off locations
+Power BI Desktop — dashboard development and visualization
+DAX — calculated measures for averages and trip counts
+NYC Yellow Taxi Dataset — public trip records
 
 
-## Requirements
+**How to Use**
 
-To open and use the report, you will need:
+Install Power BI Desktop
+Clone or download this repository
+Open taxidata1.pbix in Power BI Desktop
+Use slicers and filters to explore the data interactively
 
-* **Power BI Desktop** (Windows)
 
-  * Download from: [https://powerbi.microsoft.com/desktop/](https://powerbi.microsoft.com/desktop/)
-
----
-
-## How to Use
-
-1. Install **Power BI Desktop**.
-2. Download or clone this repository.
-3. Open `taxidata1.pbix` in Power BI Desktop.
-4. If prompted, refresh the data or update data source credentials.
-5. Use slicers and filters to explore insights interactively.
-
----
-
-## Customization
-
-You can easily adapt the report by:
-
-* Replacing the data source with a newer or different taxi dataset
-* Adding new measures (DAX) for KPIs like average fare per mile
-* Creating additional visuals or pages for deeper analysis
-
----
-
-## Limitations
-
-* Data quality depends on the original taxi dataset (missing values, outliers, etc.).
-* Geographic visuals require valid location or zone fields.
-* Performance may vary with very large datasets.
-
----
-
-## License / Usage
-
-This report is intended for **educational and analytical purposes**. Review your data source’s license or terms before using it for commercial or public reporting.
-
----
-
+Author
+Srishma Reddy Manne
+📧 mannesrishma@gmail.com
